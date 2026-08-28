@@ -1,0 +1,357 @@
+/* ===========================================================
+   Wellness Eras — design tokens
+   Editorial "kitchen counter" system built around a recurring
+   line-art plate motif that echoes the newsletter's signature
+   "This Week's Plate" section.
+=========================================================== */
+
+:root {
+  --cream: #FBF6EC;
+  --cream-deep: #F3EBDA;
+  --ink: #23281C;
+  --ink-soft: #4A5240;
+  --sage: #5B7358;
+  --sage-deep: #3B4A32;
+  --rust: #B85C3B;
+  --gold: #D9A441;
+  --line: #DFD5BC;
+  --paper-shadow: rgba(35, 40, 28, 0.08);
+
+  --display: "Fraunces", "Iowan Old Style", ui-serif, serif;
+  --body: "Work Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --max: 1100px;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, svg { display: block; max-width: 100%; }
+
+a { color: inherit; }
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--sage-deep);
+  outline-offset: 3px;
+}
+
+/* -----------------------------------------------------------
+   Texture: a faint paper grain so the cream isn't flat digital
+----------------------------------------------------------- */
+.grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  z-index: 0;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/></svg>");
+}
+
+/* -----------------------------------------------------------
+   Layout shell
+----------------------------------------------------------- */
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 28px;
+  position: relative;
+  z-index: 1;
+}
+
+header.site {
+  padding: 28px 0 0;
+}
+header.site .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.brand .mark { width: 22px; height: 22px; flex: none; }
+.brand .mark circle { fill: none; stroke: var(--sage-deep); stroke-width: 5.5; }
+
+.eyebrow {
+  font-family: var(--body);
+  font-weight: 600;
+  font-size: 12.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--rust);
+}
+
+/* -----------------------------------------------------------
+   Hero
+----------------------------------------------------------- */
+.hero {
+  padding: 64px 0 40px;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 56px;
+  align-items: center;
+}
+@media (max-width: 860px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 36px; }
+  .hero-art { order: -1; max-width: 280px; margin: 0 auto; }
+}
+
+h1 {
+  font-family: var(--display);
+  font-weight: 480;
+  font-optical-sizing: auto;
+  font-size: clamp(40px, 6vw, 62px);
+  line-height: 1.04;
+  letter-spacing: -0.01em;
+  margin: 14px 0 20px;
+  color: var(--ink);
+}
+h1 em {
+  font-style: italic;
+  color: var(--sage-deep);
+}
+
+.lede {
+  font-size: 19px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  max-width: 46ch;
+  margin: 0 0 30px;
+}
+
+/* -----------------------------------------------------------
+   Buttons + form
+----------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--body);
+  font-weight: 600;
+  font-size: 15.5px;
+  padding: 15px 26px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.btn-primary {
+  background: var(--sage-deep);
+  color: var(--cream);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+}
+.btn-primary:hover { transform: translateY(-1px); box-shadow: 0 6px 16px var(--paper-shadow); }
+.btn-ghost {
+  background: transparent;
+  color: var(--ink);
+  border: 1.5px solid var(--line);
+}
+.btn-ghost:hover { border-color: var(--sage-deep); }
+.btn svg { width: 16px; height: 16px; }
+
+.signup {
+  max-width: 440px;
+}
+.signup-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.field {
+  flex: 1 1 160px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1.5px solid var(--line);
+  background: #fff;
+  font-family: var(--body);
+  font-size: 15.5px;
+  color: var(--ink);
+}
+.field:focus { border-color: var(--sage-deep); }
+.microcopy {
+  margin-top: 12px;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+}
+.microcopy a { text-decoration: underline; text-decoration-color: var(--line); }
+
+/* MailerLite embed container gets the same treatment as our
+   own form so the two are visually interchangeable */
+.ml-embed { max-width: 440px; }
+
+/* -----------------------------------------------------------
+   Reassurance row
+----------------------------------------------------------- */
+.reassure {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 52px;
+  padding-top: 30px;
+  border-top: 1px solid var(--line);
+}
+@media (max-width: 700px) {
+  .reassure { grid-template-columns: 1fr; }
+}
+.reassure-item { font-size: 14.5px; color: var(--ink-soft); }
+.reassure-item strong { display: block; color: var(--ink); font-family: var(--display); font-weight: 600; font-size: 16.5px; margin-bottom: 4px; }
+
+/* -----------------------------------------------------------
+   Plate motif — the signature element
+----------------------------------------------------------- */
+.plate {
+  width: 100%;
+  max-width: 360px;
+}
+.plate .rim { fill: none; stroke: var(--sage-deep); stroke-width: 2.2; }
+.plate .rim-inner { fill: none; stroke: var(--line); stroke-width: 1.4; }
+.plate .food { fill: none; stroke: var(--rust); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.plate .food.alt { stroke: var(--gold); }
+.plate .food.alt2 { stroke: var(--sage); }
+
+.tile-field {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.5;
+  overflow: hidden;
+}
+
+/* -----------------------------------------------------------
+   Section scaffolding
+----------------------------------------------------------- */
+section { padding: 64px 0; }
+.section-tight { padding: 40px 0; }
+hr.rule {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 0;
+}
+
+h2 {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: clamp(28px, 3.6vw, 38px);
+  line-height: 1.15;
+  margin: 6px 0 18px;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+@media (max-width: 800px) {
+  .two-col { grid-template-columns: 1fr; }
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 26px 28px;
+}
+
+ul.plain { list-style: none; margin: 0; padding: 0; }
+ul.plain li {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  gap: 12px;
+  font-size: 15.5px;
+}
+ul.plain li:last-child { border-bottom: none; }
+ul.plain li svg { flex: none; width: 18px; height: 18px; margin-top: 3px; stroke: var(--sage-deep); }
+
+/* -----------------------------------------------------------
+   Footer
+----------------------------------------------------------- */
+footer.site {
+  border-top: 1px solid var(--line);
+  padding: 34px 0 50px;
+  margin-top: 30px;
+}
+footer.site .wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+}
+footer.site a { text-decoration: underline; text-decoration-color: var(--line); }
+footer.site .addr { max-width: 34ch; }
+
+/* -----------------------------------------------------------
+   Price block (product page)
+----------------------------------------------------------- */
+.price-card {
+  background: var(--sage-deep);
+  color: var(--cream);
+  border-radius: 22px;
+  padding: 34px 32px;
+  position: relative;
+  overflow: hidden;
+}
+.price-card .price {
+  font-family: var(--display);
+  font-size: 52px;
+  font-weight: 500;
+  margin: 4px 0 2px;
+}
+.price-card .price span { font-size: 20px; opacity: 0.75; font-family: var(--body); }
+.price-card .btn-primary {
+  background: var(--cream);
+  color: var(--sage-deep);
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+}
+.price-card .fine {
+  margin-top: 14px;
+  font-size: 13px;
+  opacity: 0.8;
+}
+.price-card ul.plain li svg { stroke: var(--cream); }
+
+.tag {
+  display: inline-block;
+  background: var(--cream-deep);
+  color: var(--sage-deep);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
