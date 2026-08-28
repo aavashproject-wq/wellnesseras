@@ -5,33 +5,54 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wellness Eras — Free 7 Day Clean Eating Plan</title>
 <meta name="description" content="Seven days of simple, real-food breakfasts, lunches, and dinners, plus a grocery list. Free, delivered instantly.">
+<link rel="canonical" href="https://www.wellnesseras.com/">
+<link rel="icon" href="/icon-32.png" sizes="32x32">
+<link rel="icon" href="/icon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Wellness Eras">
+<meta property="og:title" content="Simple meals you'll actually make again">
+<meta property="og:description" content="Seven days of real-food breakfasts, lunches, and dinners, plus a grocery list. Free, delivered instantly.">
+<meta property="og:image" content="https://www.wellnesseras.com/og-image.png">
+<meta property="og:url" content="https://www.wellnesseras.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Simple meals you'll actually make again">
+<meta name="twitter:description" content="Seven days of real-food breakfasts, lunches, and dinners, plus a grocery list. Free, delivered instantly.">
+<meta name="twitter:image" content="https://www.wellnesseras.com/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,380..600;1,9..144,420..500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="grain" aria-hidden="true"></div>
 
 <header class="site">
   <div class="wrap">
     <a class="brand" href="/">
-      <svg class="mark" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/></svg>
-      Wellness Eras
+      <span class="mark"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/></svg></span>
+      Wellness<span class="accent">Eras</span>
     </a>
-    <span class="eyebrow">Free 7 day plan</span>
+    <nav class="links">
+      <a href="#whats-inside">What's inside</a>
+      <a href="/28-day-plan">28 Day Plan</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="#signup">
+      Get the plan
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
   </div>
 </header>
 
 <main>
   <section class="hero">
+    <div class="ambient" aria-hidden="true"></div>
     <div class="wrap hero-grid">
       <div>
-        <span class="eyebrow">Real food, no overhaul</span>
-        <h1>Simple meals you'll <em>actually</em> make again.</h1>
-        <p class="lede">Seven days of clean eating breakfasts, lunches, and dinners, built for real weeknights, not a magazine shoot. Enter your email and I'll send it over.</p>
+        <span class="pill-badge"><span class="dot"></span>Free 7 day meal plan</span>
+        <h1>Eat well without the <span class="accent">overhaul.</span></h1>
+        <p class="lede">Seven days of simple clean eating breakfasts, lunches, and dinners, built for real weeknights, plus a grocery list so you're not guessing at the store.</p>
 
-        <div class="signup">
+        <div class="signup" id="signup">
           <!-- MailerLite embedded form. Replace data-form with your MailerLite form ID
                from Forms > Embedded forms in your MailerLite account. -->
           <form class="ml-embed" action="https://assets.mailerlite.com/jsonp/YOUR_ACCOUNT_ID/forms/YOUR_FORM_ID/subscribe" method="post" target="_blank">
@@ -46,32 +67,61 @@
               </button>
             </div>
           </form>
-          <p class="microcopy">Free, delivered instantly. You'll also get a short weekly email with more recipes and tips. Unsubscribe anytime, no hard feelings.</p>
+          <p class="microcopy">Free, delivered instantly. You'll also get a short weekly email with more recipes and tips. Unsubscribe anytime.</p>
+        </div>
+
+        <div class="trust-line">
+          <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>
+          Written and sent by a real person, no bots, no spam.
         </div>
       </div>
 
       <div class="hero-art">
-        <!-- Signature element: an "empty plate" — the meal before it's served -->
-        <svg class="plate" viewBox="0 0 240 240" role="img" aria-label="Line illustration of an empty plate, set at a table">
-          <circle class="rim" cx="120" cy="120" r="96"/>
-          <circle class="rim-inner" cx="120" cy="120" r="74"/>
-          <!-- fork -->
-          <g class="food alt2">
-            <line x1="34" y1="60" x2="34" y2="180"/>
-            <line x1="24" y1="60" x2="24" y2="90"/>
-            <line x1="34" y1="60" x2="34" y2="90"/>
-            <line x1="44" y1="60" x2="44" y2="90"/>
-          </g>
-          <!-- knife -->
-          <g class="food">
-            <line x1="206" y1="60" x2="206" y2="180"/>
-            <path d="M206 60 q10 14 0 40"/>
-          </g>
-        </svg>
+        <div class="circle-frame">
+          <!-- Swap this SVG for a real photo of your own food when ready:
+               <img src="/your-photo.jpg" alt="..." style="width:100%;height:100%;object-fit:cover;"> -->
+          <svg class="plate-fill" viewBox="0 0 240 240" role="img" aria-label="Illustration of a plate with an egg, a citrus wedge, and a sprig of herbs">
+            <circle cx="120" cy="120" r="96" fill="none" stroke="#153A2D" stroke-width="2.5"/>
+            <circle cx="120" cy="120" r="74" fill="none" stroke="#D7E8DE" stroke-width="1.6"/>
+            <g fill="none" stroke="#17A873" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+              <ellipse cx="92" cy="105" rx="30" ry="24"/>
+              <circle cx="96" cy="103" r="10"/>
+            </g>
+            <g fill="none" stroke="#E7A93B" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M150 150 A34 34 0 0 1 150 82"/>
+              <line x1="150" y1="150" x2="150" y2="82"/>
+              <line x1="150" y1="116" x2="122" y2="116"/>
+              <line x1="150" y1="116" x2="139" y2="90"/>
+              <line x1="150" y1="116" x2="139" y2="142"/>
+            </g>
+            <g fill="none" stroke="#0E7E56" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M108 168 q6 -18 22 -22"/>
+              <path d="M116 158 l-8 -8"/>
+              <path d="M122 150 l-8 -8"/>
+              <path d="M128 144 l-6 -8"/>
+            </g>
+          </svg>
+        </div>
+
+        <div class="float-card top">
+          <div class="fc-label">Today's plate</div>
+          <div class="fc-title">Lemon Garlic Chicken</div>
+          <div class="fc-sub">Dinner · 25 min</div>
+        </div>
+
+        <div class="float-card bottom">
+          <div class="fc-thumb">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#17A873" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 4v16"/></svg>
+          </div>
+          <div>
+            <div class="fc-label">Included</div>
+            <div class="fc-title" style="font-size:13.5px;">Grocery list, 7 days</div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="wrap reassure">
+    <div class="wrap reassure" id="whats-inside">
       <div class="reassure-item">
         <strong>What's inside</strong>
         7 breakfasts, 7 lunches, 7 dinners, snack ideas, and a simple grocery list.
@@ -91,7 +141,7 @@
 <footer class="site">
   <div class="wrap">
     <div class="addr">Wellness Eras · Simara Airport, Gadhimai, Nepal</div>
-    <div><a href="mailto:hello@wellnesseras.com">hello@wellnesseras.com</a></div>
+    <div><a href="mailto:hello@wellnesseras.com">hello@wellnesseras.com</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></div>
   </div>
 </footer>
 

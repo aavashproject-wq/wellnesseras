@@ -1,10 +1,12 @@
 # Wellness Eras — site
 
-A plain HTML/CSS site, no build step, no framework. Three pages:
+A plain HTML/CSS site, no build step, no framework. Pages:
 
 - `index.html` — landing page, free 7 Day Plan opt-in
 - `welcome.html` — delivery page shown right after signup, plus a soft offer for the 28 Day Plan
 - `28-day-plan.html` — product page for the $2.99 28 Day Plan
+- `privacy.html` / `terms.html` — linked in every footer
+- `favicon`, `apple-touch-icon.png`, `og-image.png` — browser tab icon and social share preview, generated from the brand mark, no action needed unless you want to change the logo later
 
 ## 1. Push to GitHub
 

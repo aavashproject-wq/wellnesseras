@@ -6,30 +6,33 @@
 <title>Your Plan Is Here — Wellness Eras</title>
 <meta name="description" content="Your free 7 Day Clean Eating Plan, delivered instantly.">
 <meta name="robots" content="noindex">
+<link rel="icon" href="/icon-32.png" sizes="32x32">
+<link rel="icon" href="/icon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,380..600;1,9..144,420..500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="grain" aria-hidden="true"></div>
 
 <header class="site">
   <div class="wrap">
     <a class="brand" href="/">
-      <svg class="mark" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/></svg>
-      Wellness Eras
+      <span class="mark"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/></svg></span>
+      Wellness<span class="accent">Eras</span>
     </a>
-    <span class="eyebrow">Issue zero</span>
+    <span class="pill-badge"><span class="dot"></span>Issue zero</span>
   </div>
 </header>
 
 <main>
   <section class="hero">
+    <div class="ambient" aria-hidden="true"></div>
     <div class="wrap hero-grid">
       <div>
         <span class="eyebrow">Your plan is ready</span>
-        <h1>Here's your <em>7 Day</em> plan.</h1>
+        <h1>Here's your <span class="accent">7 day</span> plan.</h1>
         <p class="lede">Seven breakfasts, seven lunches, seven dinners, snack ideas, and a grocery list so the week doesn't take much thinking. Pick one meal to try first, that's all it takes to start.</p>
 
         <!-- Replace with the real hosted PDF link -->
@@ -41,31 +44,43 @@
       </div>
 
       <div class="hero-art">
-        <!-- Signature element: the plate, now served -->
-        <svg class="plate" viewBox="0 0 240 240" role="img" aria-label="Line illustration of a served plate with an egg, a citrus wedge, and a sprig of herbs">
-          <circle class="rim" cx="120" cy="120" r="96"/>
-          <circle class="rim-inner" cx="120" cy="120" r="74"/>
-          <!-- fried egg -->
-          <g class="food">
-            <ellipse cx="92" cy="105" rx="30" ry="24"/>
-            <circle cx="96" cy="103" r="10"/>
-          </g>
-          <!-- citrus wedge -->
-          <g class="food alt">
-            <path d="M150 150 A34 34 0 0 1 150 82"/>
-            <line x1="150" y1="150" x2="150" y2="82"/>
-            <line x1="150" y1="116" x2="122" y2="116"/>
-            <line x1="150" y1="116" x2="139" y2="90"/>
-            <line x1="150" y1="116" x2="139" y2="142"/>
-          </g>
-          <!-- herb sprig -->
-          <g class="food alt2">
-            <path d="M108 168 q6 -18 22 -22"/>
-            <path d="M116 158 l-8 -8"/>
-            <path d="M122 150 l-8 -8"/>
-            <path d="M128 144 l-6 -8"/>
-          </g>
-        </svg>
+        <div class="circle-frame">
+          <svg class="plate-fill" viewBox="0 0 240 240" role="img" aria-label="Illustration of a served plate with an egg, a citrus wedge, and a sprig of herbs">
+            <circle cx="120" cy="120" r="96" fill="none" stroke="#153A2D" stroke-width="2.5"/>
+            <circle cx="120" cy="120" r="74" fill="none" stroke="#D7E8DE" stroke-width="1.6"/>
+            <g fill="none" stroke="#17A873" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+              <ellipse cx="92" cy="105" rx="30" ry="24"/>
+              <circle cx="96" cy="103" r="10"/>
+            </g>
+            <g fill="none" stroke="#E7A93B" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M150 150 A34 34 0 0 1 150 82"/>
+              <line x1="150" y1="150" x2="150" y2="82"/>
+              <line x1="150" y1="116" x2="122" y2="116"/>
+              <line x1="150" y1="116" x2="139" y2="90"/>
+              <line x1="150" y1="116" x2="139" y2="142"/>
+            </g>
+            <g fill="none" stroke="#0E7E56" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M108 168 q6 -18 22 -22"/>
+              <path d="M116 158 l-8 -8"/>
+              <path d="M122 150 l-8 -8"/>
+              <path d="M128 144 l-6 -8"/>
+            </g>
+          </svg>
+        </div>
+        <div class="float-card top">
+          <div class="fc-label">Step one</div>
+          <div class="fc-title">Pick one meal</div>
+          <div class="fc-sub">Any day, any order</div>
+        </div>
+        <div class="float-card bottom">
+          <div class="fc-thumb">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#17A873" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          </div>
+          <div>
+            <div class="fc-label">Delivered</div>
+            <div class="fc-title" style="font-size:13.5px;">Plan + grocery list</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -85,23 +100,11 @@
         <span class="tag">28 day plan</span>
         <div class="price">$2.99 <span>one time</span></div>
         <ul class="plain" style="margin-top:16px;">
-          <li style="border-color: rgba(251,246,236,0.18); color: var(--cream);">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-            28 days of breakfasts, lunches, and dinners
-          </li>
-          <li style="border-color: rgba(251,246,236,0.18); color: var(--cream);">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-            Grocery lists organized by week
-          </li>
-          <li style="border-color: rgba(251,246,236,0.18); color: var(--cream); border-bottom:none;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-            Same simple, repeatable meals
-          </li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 6L9 17l-5-5"/></svg></span>28 days of breakfasts, lunches, and dinners</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 6L9 17l-5-5"/></svg></span>Grocery lists organized by week</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 6L9 17l-5-5"/></svg></span>Same simple, repeatable meals</li>
         </ul>
-        <!-- Replace with your MailerLite product checkout link or Stripe payment link -->
-        <a class="btn btn-primary" href="/28-day-plan">
-          See the full plan
-        </a>
+        <a class="btn btn-primary" href="/28-day-plan">See the full plan</a>
         <p class="fine">Instant download after checkout.</p>
       </div>
     </div>
@@ -111,7 +114,7 @@
 <footer class="site">
   <div class="wrap">
     <div class="addr">Wellness Eras · Simara Airport, Gadhimai, Nepal. You're receiving this because you signed up for the free plan.</div>
-    <div><a href="mailto:hello@wellnesseras.com">hello@wellnesseras.com</a> · <a href="#">Unsubscribe</a></div>
+    <div><a href="mailto:hello@wellnesseras.com">hello@wellnesseras.com</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></div>
   </div>
 </footer>
 
