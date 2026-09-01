@@ -1,3 +1,66 @@
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:#123b2d;background:#fff;font-family:"DM Sans",sans-serif;line-height:1.55}a{text-decoration:none;color:inherit}.container{width:min(1080px,calc(100% - 40px));margin:auto}.site-header{height:76px;border-bottom:1px solid #edf1ef;background:#fff;position:relative;z-index:5}.nav-inner{height:100%;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:9px;font-size:16px;font-weight:700;letter-spacing:-.3px}.brand b{color:#12a66f}.logo-mark{width:28px;height:28px;display:block}.nav-link{font-size:12px;font-weight:700;color:#50635b}.nav-link span{color:#0da16b;margin-left:5px}.hero{position:relative;overflow:hidden;padding:72px 0 70px;background:linear-gradient(180deg,#fbfdfc,#fff)}.hero-glow{position:absolute;width:650px;height:650px;border-radius:50%;right:-180px;top:-150px;background:radial-gradient(circle,rgba(217,241,228,.72),transparent 68%)}.hero-grid{position:relative;display:grid;grid-template-columns:1fr .9fr;gap:75px;align-items:center}.hero-copy{max-width:550px}.eyebrow{display:flex;align-items:center;gap:8px;font-size:10px;font-weight:800;letter-spacing:1.15px;color:#0c9b66}.eyebrow>span{width:6px;height:6px;background:#11ad73;border-radius:50%}.hero h1{font:800 62px/1.01 "Manrope",sans-serif;letter-spacing:-2.6px;margin:15px 0}.hero h1 em{font-style:normal;color:#0da56d}.hero-lede{font-size:16px;line-height:1.65;color:#63736b;max-width:500px;margin:0 0 25px}.signup-card{background:#fff;border:1px solid #e0e9e4;border-radius:18px;padding:21px;box-shadow:0 16px 45px rgba(24,55,44,.09);max-width:500px}.signup-title{font:800 18px "Manrope";letter-spacing:-.4px}.signup-subtitle{font-size:11.5px;color:#738078;margin:3px 0 13px}.sender-form-field{min-height:65px}.microcopy{font-size:10px;color:#7a8580;margin:8px 0 0;line-height:1.5}.trust-line{display:flex;align-items:center;gap:8px;color:#68766f;font-size:11px;margin-top:12px}.trust-line span{display:grid;place-items:center;width:19px;height:19px;border-radius:50%;background:#e8f7ef;color:#0b9b66;font-weight:800}.hero-visual{display:flex;justify-content:center}.photo-wrap{width:min(455px,100%);aspect-ratio:1/1;position:relative}.hero-photo{display:block;width:100%;height:100%;object-fit:cover;border-radius:30px;box-shadow:0 25px 65px rgba(22,58,44,.15)}.photo-label{position:absolute;left:-22px;bottom:30px;background:rgba(255,255,255,.97);border:1px solid #e2ebe6;border-radius:14px;padding:13px 16px;box-shadow:0 12px 30px rgba(24,55,44,.12)}.photo-label small{display:block;font-size:8px;font-weight:800;letter-spacing:.8px;color:#7b8781}.photo-label strong{display:block;font-size:12px;margin-top:3px}.photo-label span{display:block;color:#748079;font-size:10px;margin-top:1px}.benefits{padding:82px 0;border-top:1px solid #edf1ef}.section-heading{text-align:center;max-width:600px;margin:0 auto 38px}.section-heading h2,.preview-copy h2,.final-cta h2{font:800 38px/1.1 "Manrope";letter-spacing:-1.5px;margin:12px 0}.benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.benefit-grid article{padding:28px;border:1px solid #e3ebe7;border-radius:18px;background:#fff}.benefit-icon{font-size:28px;margin-bottom:16px}.benefit-grid h3{font:800 18px "Manrope";margin:0 0 6px}.benefit-grid p{font-size:12px;color:#718078;margin:0}.food-preview{background:#f3f8f5;padding:85px 0}.preview-grid{display:grid;grid-template-columns:1fr 1fr;gap:75px;align-items:center}.preview-photo img{width:100%;max-width:490px;display:block;border-radius:24px;box-shadow:0 18px 50px rgba(22,58,44,.11)}.preview-copy p{font-size:14px;color:#6b7972;max-width:500px}.text-link{display:inline-flex;gap:9px;margin-top:10px;font-size:12px;color:#0b9865;font-weight:800}.final-cta{text-align:center;padding:88px 0}.final-inner{display:flex;flex-direction:column;align-items:center}.final-cta h2{font-size:45px;margin:13px 0 8px}.final-cta p{font-size:14px;color:#6f7c75;margin:0 0 22px}.button{display:inline-flex;gap:10px;align-items:center;background:#123e2f;color:#fff;border-radius:999px;padding:14px 24px;font-size:13px;font-weight:800;box-shadow:0 10px 25px rgba(18,62,47,.15)}.site-footer{border-top:1px solid #e5ebe8;background:#f7f9f8;padding:28px 0 18px}.footer-inner{display:flex;align-items:center;justify-content:space-between}.footer-links{display:flex;gap:22px;color:#697770;font-size:10.5px}.copyright{border-top:1px solid #e4ebe7;margin-top:22px;padding-top:14px;color:#8a938e;font-size:9.5px}.legal-page{padding:70px 0 100px}.legal-page .container{max-width:760px}.legal-page h1{font:800 46px "Manrope";letter-spacing:-1.5px}.legal-page h2{font:800 22px "Manrope";margin-top:35px}.legal-page p{font-size:14px;color:#65746c}.legal-page a{color:#0b9865;font-weight:700}
-@media(max-width:850px){.hero-grid,.preview-grid{grid-template-columns:1fr;gap:45px}.hero-copy{max-width:none}.hero-visual{order:2}.photo-wrap{max-width:520px}.hero h1{font-size:52px}.benefit-grid{grid-template-columns:1fr}.preview-photo{order:2}.preview-copy{order:1}.preview-photo img{margin:auto}.footer-inner{align-items:flex-start;flex-direction:column;gap:18px}}
-@media(max-width:560px){.container{width:calc(100% - 28px)}.site-header{height:68px}.nav-link{font-size:11px}.hero{padding:52px 0 55px}.hero h1{font-size:43px}.hero-lede{font-size:14px}.signup-card{padding:17px}.photo-label{left:8px;bottom:18px}.section-heading h2,.preview-copy h2{font-size:32px}.benefits,.food-preview{padding:65px 0}.final-cta{padding:72px 0}.final-cta h2{font-size:35px}.footer-links{flex-wrap:wrap;gap:10px 18px}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:#123b2d;background:#fff;font-family:"DM Sans",sans-serif;line-height:1.55}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,calc(100% - 44px));margin:auto}
+.site-header{height:76px;border-bottom:1px solid #e9efec;background:#fff;position:relative;z-index:10}
+.nav-inner{height:100%;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:9px;font-size:16px;font-weight:700;letter-spacing:-.3px}
+.brand b{color:#11a66e}
+.logo-mark{width:29px;height:29px;display:block}
+.nav-link{font-size:12px;font-weight:700;color:#53655d}
+.nav-link span{color:#0da16b;margin-left:4px}
+.hero{position:relative;overflow:hidden;padding:86px 0 82px;background:linear-gradient(180deg,#fbfdfc 0%,#fff 90%)}
+.hero-glow{position:absolute;width:720px;height:720px;border-radius:50%;right:-210px;top:-190px;background:radial-gradient(circle,rgba(211,240,225,.82),rgba(255,255,255,0) 68%)}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.02fr .98fr;gap:80px;align-items:center}
+.hero-copy{max-width:570px}
+.eyebrow{display:flex;align-items:center;gap:8px;font-size:10px;font-weight:800;letter-spacing:1.15px;color:#0b9b66}
+.eyebrow>span{width:6px;height:6px;background:#11ad73;border-radius:50%}
+.hero h1{font:800 68px/1 "Manrope",sans-serif;letter-spacing:-3.1px;margin:17px 0}
+.hero h1 em{font-style:normal;color:#0ca66d}
+.hero-lede{font-size:17px;line-height:1.65;color:#617169;max-width:535px;margin:0 0 28px}
+.signup-card{background:#fff;border:1px solid #dce7e1;border-radius:20px;padding:23px;box-shadow:0 18px 55px rgba(18,58,45,.11);max-width:530px}
+.signup-title{font:800 20px "Manrope";letter-spacing:-.5px}
+.signup-subtitle{font-size:12px;color:#718079;margin:3px 0 14px}
+.sender-form-field{min-height:72px}
+.microcopy{font-size:10px;color:#7b8681;line-height:1.5;margin:8px 0 0}
+.trust-line{display:flex;align-items:center;gap:8px;color:#65746c;font-size:11px;margin-top:13px}
+.trust-line span:first-child{width:20px;height:20px;border-radius:50%;background:#e6f7ee;color:#0b9c66;display:grid;place-items:center;font-weight:800}
+.hero-visual{display:flex;justify-content:center}
+.photo-wrap{width:min(540px,100%);aspect-ratio:1/1;position:relative}
+.hero-photo{width:100%;height:100%;display:block;object-fit:cover;border-radius:34px;box-shadow:0 28px 75px rgba(20,57,43,.17)}
+.photo-label{position:absolute;left:-25px;bottom:32px;background:rgba(255,255,255,.98);border:1px solid #e0e9e4;border-radius:15px;padding:14px 17px;box-shadow:0 14px 35px rgba(24,55,44,.13)}
+.photo-label small{display:block;color:#7b8781;font-size:8px;font-weight:800;letter-spacing:.8px}
+.photo-label strong{display:block;font-size:13px;margin-top:3px}
+.photo-label span{display:block;color:#748079;font-size:10px;margin-top:1px}
+.benefits{padding:86px 0;border-top:1px solid #edf1ef}
+.section-heading{text-align:center;max-width:650px;margin:0 auto 40px}
+.section-heading h2,.preview-copy h2,.final-cta h2{font:800 40px/1.1 "Manrope";letter-spacing:-1.7px;margin:12px 0}
+.benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.benefit-grid article{padding:30px;border:1px solid #dfe9e4;border-radius:19px;background:#fff;min-height:205px}
+.benefit-icon{font-size:29px;margin-bottom:18px}
+.benefit-grid h3{font:800 19px "Manrope";letter-spacing:-.4px;margin:0 0 7px}
+.benefit-grid p{font-size:12px;line-height:1.6;color:#718079;margin:0;max-width:290px}
+.food-preview{background:#f3f8f5;padding:90px 0}
+.preview-grid{display:grid;grid-template-columns:1fr 1fr;gap:82px;align-items:center}
+.preview-photo img{width:100%;display:block;border-radius:28px;box-shadow:0 22px 55px rgba(20,57,43,.12)}
+.preview-copy{max-width:500px}
+.preview-copy p{font-size:14px;line-height:1.7;color:#697870}
+.text-link{display:inline-flex;gap:9px;margin-top:11px;color:#0b9865;font-weight:800;font-size:12px}
+.final-cta{text-align:center;padding:92px 0 100px}
+.final-inner{display:flex;flex-direction:column;align-items:center}
+.final-cta h2{font-size:48px;margin:14px 0 8px}
+.final-cta p{font-size:14px;color:#6d7b74;margin:0 0 23px}
+.button{display:inline-flex;align-items:center;gap:10px;background:#123e2f;color:#fff;border-radius:999px;padding:14px 24px;font-size:13px;font-weight:800;box-shadow:0 10px 28px rgba(18,62,47,.16)}
+.site-footer{background:#f7f9f8;border-top:1px solid #e4ebe7;padding:29px 0 18px}
+.footer-inner{display:flex;justify-content:space-between;align-items:center}
+.footer-links{display:flex;gap:23px;color:#68766f;font-size:10.5px}
+.copyright{border-top:1px solid #e3ebe7;margin-top:22px;padding-top:14px;color:#8b948f;font-size:9.5px}
+.legal-page{padding:70px 0 100px}
+.legal-page .container{max-width:780px}
+.legal-page h1{font:800 48px "Manrope";letter-spacing:-1.8px}
+.legal-page h2{font:800 23px "Manrope";margin-top:36px}
+.legal-page p{font-size:14px;color:#65746d}
+.legal-page a{color:#0b9865;font-weight:700}
+@media(max-width:900px){.hero-grid,.preview-grid{grid-template-columns:1fr;gap:48px}.hero-copy{max-width:none}.hero-visual{order:2}.photo-wrap{max-width:600px}.hero h1{font-size:56px}.benefit-grid{grid-template-columns:1fr}.preview-copy{order:1;max-width:none}.preview-photo{order:2}.preview-photo img{max-width:600px;margin:auto}}
+@media(max-width:560px){.container{width:calc(100% - 28px)}.site-header{height:68px}.hero{padding:55px 0 58px}.hero h1{font-size:45px;letter-spacing:-2px}.hero-lede{font-size:14px}.signup-card{padding:17px}.photo-label{left:9px;bottom:17px}.benefits,.food-preview{padding:66px 0}.section-heading h2,.preview-copy h2{font-size:33px}.final-cta{padding:70px 0 80px}.final-cta h2{font-size:37px}.footer-inner{align-items:flex-start;flex-direction:column;gap:17px}.footer-links{flex-wrap:wrap;gap:10px 18px}}

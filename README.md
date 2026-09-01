@@ -1,24 +1,63 @@
 # Wellness Eras Lead Magnet Landing Page
 
-A lightweight static landing page for wellnesseras.com.
+This version is intentionally focused on one primary action: getting the visitor to request the free 7 Day Clean Eating Plan.
+
+## What changed
+
+- Larger, stronger hero
+- Clearer value proposition
+- Much larger food visual
+- Sender form remains integrated
+- 28 Day Plan is kept out of the main conversion flow except as a small header link
+- Three concise benefit cards
+- Short food preview section
+- One final CTA
+- Minimal footer
+- Separate editable logo asset
+- Separate editable food assets
+- Responsive layout
 
 ## Sender integration
+
 The Sender universal script from the supplied website has been preserved.
-The Sender form ID is `bmZ39R`.
 
-## Logo
-The header logo is a separate file:
+Sender account initialization:
+`sender('952dde70111419')`
 
+Sender form:
+`data-sender-form-id="bmZ39R"`
+
+Do not remove either unless you intentionally change your Sender setup.
+
+## Change the logo
+
+Replace:
 `assets/logo-mark.svg`
 
-Replace that file with your own SVG logo, keeping the same filename, and the header/footer will update automatically.
+The same file is used in the header, footer, and favicon.
 
-## Hero image
-The hero image is:
+## Change the hero image
 
+Replace:
 `images/hero-food.svg`
 
-Replace it with your preferred JPG/PNG/SVG and update the `src` in `index.html` if the filename changes.
+The hero is intentionally controlled by one simple image element in `index.html`.
+
+For the strongest production result, replace the included artwork with a high quality, realistic food photograph. Recommended: a square or slightly vertical top-down photograph showing eggs, avocado, greens, tomatoes, grilled chicken or another colorful clean eating meal.
+
+If you replace the SVG with a JPG, for example `images/hero-food.jpg`, update the `src` in `index.html`.
+
+## Change the second food image
+
+Replace:
+`images/meal-preview.svg`
 
 ## Deploy
-Upload the contents to GitHub. No build process is required.
+
+Upload the ZIP contents to the root of your GitHub repository. No build process is required.
+
+If using GitHub Pages, configure the repository's Pages settings and custom domain there.
+
+## Important
+
+The privacy and terms pages are starter copy, not legal advice. Review them for your actual business, jurisdiction, email practices, consent wording, analytics, and other services before publishing.

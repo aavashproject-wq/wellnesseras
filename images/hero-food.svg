@@ -1,1 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900"><defs><radialGradient id="a"><stop stop-color="#fff"/><stop offset="1" stop-color="#dcefe3"/></radialGradient><filter id="s"><feDropShadow dx="0" dy="24" stdDeviation="25" flood-opacity=".16"/></filter></defs><rect width="900" height="900" rx="40" fill="url(#a)"/><circle cx="450" cy="460" r="300" fill="#fff" filter="url(#s)"/><circle cx="450" cy="460" r="240" fill="#f8faf7" stroke="#d8e5dd" stroke-width="7"/><g fill="#65985a"><ellipse cx="300" cy="365" rx="52" ry="29" transform="rotate(-25 300 365)"/><ellipse cx="330" cy="330" rx="50" ry="27" transform="rotate(25 330 330)"/><ellipse cx="286" cy="420" rx="48" ry="27" transform="rotate(18 286 420)"/></g><ellipse cx="470" cy="340" rx="70" ry="57" fill="#fff" stroke="#e0e6df" stroke-width="6"/><circle cx="478" cy="345" r="23" fill="#f0b944"/><ellipse cx="555" cy="425" rx="67" ry="54" fill="#fff" stroke="#e0e6df" stroke-width="6"/><circle cx="562" cy="430" r="22" fill="#f0b944"/><path d="M320 555Q390 460 520 505Q620 535 650 620Q570 685 455 670Q350 650 320 555Z" fill="#d88a5e"/><path d="M350 550Q470 500 590 555M365 605Q480 565 615 610" fill="none" stroke="#f2c2a0" stroke-width="13" stroke-linecap="round"/><path d="M645 320Q720 350 690 450Q660 510 600 485Q565 465 580 405Q590 345 645 320Z" fill="#76a55d"/><path d="M640 350Q680 365 666 420Q650 462 620 452Q600 444 608 405Q612 370 640 350Z" fill="#dbe6a4"/><circle cx="635" cy="420" r="19" fill="#96693d"/><circle cx="285" cy="575" r="42" fill="#e4664e"/><circle cx="335" cy="655" r="38" fill="#df5e4b"/><circle cx="690" cy="575" r="43" fill="#df664e"/><g fill="#efa73d"><path d="M270 490q60-45 90 5-55 20-90-5Z"/><path d="M660 650q55-35 80 10-45 15-80-10Z"/></g><g fill="#3f8957"><circle cx="705" cy="480" r="27"/><circle cx="742" cy="505" r="30"/><circle cx="715" cy="535" r="28"/><path d="M715 535v45" stroke="#5b8951" stroke-width="15"/></g><g fill="#d5a65b"><ellipse cx="450" cy="720" rx="75" ry="28"/><ellipse cx="535" cy="710" rx="65" ry="25"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dcefe4"/><stop offset=".55" stop-color="#f4f8f1"/><stop offset="1" stop-color="#cfe6d8"/></linearGradient>
+<radialGradient id="plate"><stop stop-color="#ffffff"/><stop offset=".85" stop-color="#f0f3ee"/></radialGradient>
+<filter id="shadow"><feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#173f30" flood-opacity=".2"/></filter>
+<filter id="soft"><feGaussianBlur stdDeviation="2"/></filter>
+</defs>
+<rect width="1000" height="1000" fill="url(#bg)"/>
+<g opacity=".22" fill="#789e78"><circle cx="120" cy="170" r="75"/><circle cx="850" cy="180" r="105"/><circle cx="870" cy="820" r="90"/><circle cx="120" cy="820" r="100"/></g>
+<circle cx="500" cy="500" r="350" fill="#fff" opacity=".34"/>
+<circle cx="500" cy="500" r="320" fill="url(#plate)" filter="url(#shadow)"/>
+<circle cx="500" cy="500" r="264" fill="#fafbf8" stroke="#d8e3dc" stroke-width="7"/>
+<!-- leafy greens -->
+<g fill="#588d55">
+<ellipse cx="305" cy="370" rx="62" ry="33" transform="rotate(-30 305 370)"/>
+<ellipse cx="355" cy="330" rx="58" ry="31" transform="rotate(25 355 330)"/>
+<ellipse cx="290" cy="445" rx="58" ry="31" transform="rotate(18 290 445)"/>
+<ellipse cx="355" cy="430" rx="60" ry="32" transform="rotate(-30 355 430)"/>
+<ellipse cx="720" cy="360" rx="55" ry="30" transform="rotate(28 720 360)"/>
+</g>
+<g fill="#6fa05e" opacity=".85"><ellipse cx="325" cy="390" rx="40" ry="20" transform="rotate(12 325 390)"/><ellipse cx="705" cy="400" rx="45" ry="24" transform="rotate(-25 705 400)"/></g>
+<!-- eggs -->
+<g><ellipse cx="490" cy="330" rx="78" ry="63" fill="#fff" stroke="#e1e6df" stroke-width="6"/><circle cx="502" cy="338" r="26" fill="#efb63e"/><circle cx="496" cy="330" r="10" fill="#f7cd66" opacity=".7"/></g>
+<g><ellipse cx="590" cy="370" rx="72" ry="58" fill="#fff" stroke="#e1e6df" stroke-width="6"/><circle cx="598" cy="377" r="24" fill="#efb63e"/></g>
+<!-- chicken -->
+<path d="M350 590 Q385 490 495 475 Q605 465 690 545 Q725 590 680 675 Q585 735 465 708 Q370 690 350 590Z" fill="#cf8158"/>
+<path d="M380 555 Q480 500 610 535" fill="none" stroke="#efb698" stroke-width="17" stroke-linecap="round"/>
+<path d="M390 620 Q510 570 665 615" fill="none" stroke="#efb698" stroke-width="15" stroke-linecap="round"/>
+<path d="M405 665 Q520 625 650 660" fill="none" stroke="#efb698" stroke-width="12" stroke-linecap="round"/>
+<!-- avocado -->
+<path d="M715 455 Q790 480 770 570 Q750 635 680 625 Q630 610 640 540 Q650 480 715 455Z" fill="#79a85e"/>
+<path d="M708 480 Q748 495 735 550 Q720 592 685 578 Q664 568 672 540 Q678 505 708 480Z" fill="#d9e6a3"/>
+<circle cx="705" cy="542" r="20" fill="#9a6b3f"/>
+<!-- tomatoes -->
+<g fill="#e3644e"><circle cx="285" cy="600" r="47"/><circle cx="330" cy="690" r="42"/><circle cx="750" cy="650" r="47"/></g>
+<g fill="#f0aa3d"><path d="M250 510q65-46 96 5-54 23-96-5Z"/><path d="M705 715q58-39 87 8-48 18-87-8Z"/><path d="M345 735q50-30 73 9-43 16-73-9Z"/></g>
+<!-- broccoli -->
+<g fill="#3f8857"><circle cx="760" cy="510" r="29"/><circle cx="800" cy="540" r="33"/><circle cx="770" cy="575" r="31"/></g>
+<path d="M770 570v62" stroke="#5a8d4f" stroke-width="17" stroke-linecap="round"/>
+<!-- grains -->
+<g fill="#d3a25d"><ellipse cx="480" cy="765" rx="88" ry="32"/><ellipse cx="580" cy="750" rx="74" ry="29"/></g>
+<!-- herbs -->
+<g stroke="#4c8853" stroke-width="9" stroke-linecap="round"><path d="M230 700q60-90 125-110"/><path d="M260 670l-30-26M285 640l-27-34M315 610l-15-35"/></g>
+</svg>
