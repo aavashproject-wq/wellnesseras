@@ -8,7 +8,7 @@ This version is intentionally focused on one primary action: getting the visitor
 - Clearer value proposition
 - Much larger food visual
 - Sender form remains integrated
-- 28 Day Plan is kept out of the main conversion flow except as a small header link
+- 28 Day Plan navigation and page are intentionally removed from this lead magnet
 - Three concise benefit cards
 - Short food preview section
 - One final CTA
