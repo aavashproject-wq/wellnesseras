@@ -136,6 +136,15 @@
 .plan-page .site-footer .brand{color:#fff}
 .plan-page .footer-links{color:#c5d4cd}
 .plan-page .copyright{border-color:rgba(255,255,255,.1);color:#8fa9a0}
+.plan-page .reference-footer{display:grid;grid-template-columns:1.4fr .7fr 1fr;gap:80px;padding:0 0 34px;align-items:start}
+.plan-page .reference-footer h3{font-size:10px;line-height:1;font-weight:800;letter-spacing:2px;color:var(--reference-orange);margin:4px 0 15px}
+.plan-page .reference-footer p,.plan-page .reference-footer a{font-size:12px;line-height:1.5;color:#c2d1c9}
+.plan-page .reference-footer p{max-width:265px;margin:12px 0 0}
+.plan-page .reference-footer-links{display:grid;gap:7px}
+.plan-page .reference-footer-links a{color:#fff}
+.plan-page .reference-footer-contact a{text-decoration:underline;text-underline-offset:3px}
+.plan-page .footer-tagline{text-align:center;border-top:1px solid rgba(255,255,255,.1);padding:14px 0 0;color:#91aaa1;font-size:9px;letter-spacing:1.5px}
+@media(max-width:560px){.plan-page .reference-footer{grid-template-columns:1fr;gap:26px}.plan-page .footer-tagline{font-size:8px;letter-spacing:1px}}
 @media(max-width:900px){.plan-page .site-header{height:76px}.plan-nav{margin-right:55px;gap:13px}.plan-page .hero{height:auto;padding-bottom:48px}.plan-page .hero-grid{grid-template-columns:1fr;gap:30px}.plan-page .plan-product{order:2}.plan-page .plan-product-card{width:300px}.plan-page .plan-product-card img{height:300px}.plan-secondary-grid{grid-template-columns:repeat(2,1fr)} }
 @media(max-width:560px){.plan-page .site-header{height:70px}.plan-page .nav-inner{width:calc(100% - 30px)}.plan-nav{display:none}.plan-header-button{top:16px}.plan-page .hero{padding-top:42px}.plan-page .plan-hero-copy h1{font-size:42px;letter-spacing:-2px}.plan-page .plan-preview,.plan-page .plan-why{padding:57px 0}.plan-page .plan-stats{gap:5px}.plan-page .plan-stats span{padding:7px 9px;font-size:7px}.plan-page .plan-stats b{font-size:10px}.plan-page .plan-preview-grid,.plan-page .plan-feature-grid,.plan-secondary-grid,.how-grid{grid-template-columns:1fr;gap:24px}.plan-page .plan-preview-grid{max-width:260px}.plan-page .plan-preview-frame{height:290px}.plan-secondary-grid{margin-top:34px}.plan-page .plan-buy-box{padding:34px 20px}.plan-page .plan-buy-box h2{font-size:25px}.plan-page .site-footer .footer-inner{gap:17px}}
 @media(max-width:900px){
@@ -272,8 +281,8 @@
 </main>
 
 <footer class="site-footer">
- <div class="container footer-inner"><a class="brand" href="../index.html"><img src="logo.png" alt="" class="logo-mark"><span>Wellness <b>Eras</b></span></a><div class="footer-links"><a href="../index.html">Home</a><a href="../downloads/">Free 7 Day Plan</a><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a></div></div>
- <div class="container copyright">© 2026 Wellness Eras. Clean eating made simpler.</div>
+ <div class="container reference-footer"><div><a class="brand" href="../index.html"><img src="logo.png" alt="" class="logo-mark"><span>Wellness <b>Eras</b></span></a><p>Premium digital health and wellness resources. Complex nutrition, turned into simple daily systems.</p></div><div><h3>PLAN</h3><nav class="reference-footer-links" aria-label="Footer plan links"><a href="#inside">What’s inside</a><a href="#how">How it works</a><a href="#why">Why this plan</a></nav></div><div class="reference-footer-contact"><h3>CONTACT</h3><a href="mailto:support@wellnesseras.com">support@wellnesseras.com</a><p>Instant digital download. Delivered the moment you purchase.</p></div></div>
+ <div class="container footer-tagline">EAT CLEAN. FEEL AMAZING. LIVE YOUR BEST LIFE.</div>
 </footer>
 </body>
 </html>
