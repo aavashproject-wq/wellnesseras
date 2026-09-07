@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="icon" href="../assets/logo-mark.svg">
+<link rel="icon" href="logo.png">
 <link rel="stylesheet" href="../styles.css">
 <style>
 .plan-page .plan-hero-copy{max-width:570px}
@@ -66,6 +66,78 @@
 .plan-page details{background:#fff;border:1px solid #dfe9e4;border-radius:15px;padding:16px 18px}
 .plan-page summary{cursor:pointer;font-size:13px;font-weight:800;color:#123e2f}
 .plan-page details p{font-size:12px;color:#71817b;margin:10px 0 0}
+/* Reference layout overrides */
+.plan-page{--reference-cream:#f8f4eb;--reference-orange:#ff641c;--reference-forest:#123f34;background:var(--reference-cream);color:var(--reference-forest)}
+.plan-page .site-header{height:90px;background:rgba(248,244,235,.96);border-bottom:1px solid #e9e1d4;position:sticky;top:0}
+.plan-page .nav-inner{max-width:865px}
+.plan-page .brand{font-size:16px;color:var(--reference-forest)}
+.plan-page .brand b{color:inherit}
+.plan-nav{display:flex;align-items:center;gap:22px;margin-left:auto;margin-right:74px}
+.plan-nav a{font-size:12px;color:#31554b}
+.plan-page .button{background:var(--reference-orange);box-shadow:none;padding:12px 18px;font-size:12px}
+.plan-page .button:hover{background:#e9510e;transform:translateY(-1px);box-shadow:none}
+.plan-header-button{position:absolute;right:0;top:20px}
+.plan-page .hero{padding:44px 0 0;background:var(--reference-cream);height:370px}
+.plan-page .hero:after,.plan-page .hero-glow{display:none}
+.plan-page .hero-grid{grid-template-columns:1.12fr .88fr;gap:25px;max-width:865px}
+.plan-page .plan-hero-copy{max-width:550px;padding-top:4px}
+.plan-page .eyebrow{color:var(--reference-orange);font-size:10px;letter-spacing:2px}
+.plan-page .eyebrow>span{background:var(--reference-orange)}
+.plan-page .plan-hero-copy h1{font-size:48px;line-height:1.02;letter-spacing:-2.7px;margin:14px 0 13px;color:var(--reference-forest)}
+.plan-page .plan-hero-copy h1 span{color:var(--reference-orange)}
+.plan-page .plan-lede{font-size:14px;line-height:1.6;max-width:500px;margin-bottom:17px;color:#66736d}
+.plan-page .plan-micro{gap:14px;margin-top:9px;color:#78827b;font-size:10px}
+.plan-page .plan-product{align-items:center}
+.plan-page .plan-product-card{width:320px;padding:8px;border:4px solid #fff;border-radius:50%;background:#fff;box-shadow:0 15px 45px rgba(18,63,52,.17);overflow:hidden}
+.plan-page .plan-product-card img{width:100%;height:320px;object-fit:cover;border-radius:50%;background:none}
+.plan-page .plan-benefits{display:none}
+.plan-page .plan-preview{padding:74px 0 62px;background:var(--reference-forest);color:#fff}
+.plan-page .plan-preview .plan-section-heading{margin-bottom:27px}
+.plan-page .plan-preview .plan-section-heading h2{color:#fff;font-size:29px;letter-spacing:-1.2px;margin-top:10px}
+.plan-page .plan-stats{display:flex;justify-content:center;gap:10px;margin-bottom:42px}
+.plan-page .plan-stats span{display:flex;flex-direction:column;align-items:center;padding:8px 24px;border:1px solid rgba(255,255,255,.17);border-radius:24px;color:#a8c0b7;font-size:8px;letter-spacing:1px;line-height:1.25}
+.plan-page .plan-stats b{color:#fff;font-size:12px;letter-spacing:0}
+.plan-page .plan-preview-grid{grid-template-columns:repeat(3,1fr);gap:66px;max-width:865px;margin:auto}
+.plan-page .plan-preview-frame{height:260px;padding:5px;border:0;border-radius:13px;box-shadow:0 12px 25px rgba(0,0,0,.12)}
+.plan-page .plan-preview-frame img{border-radius:9px}
+.plan-page .plan-preview-card h3{color:#fff;font-size:15px;margin-top:12px}
+.plan-page .plan-preview-card p{color:#b1c2ba;font-size:11px}
+.plan-centered-button{display:flex;width:max-content;margin:29px auto 0}
+.plan-page .plan-why{padding:77px 0 72px;background:var(--reference-cream)}
+.plan-page .plan-why .plan-section-heading{margin-bottom:31px}
+.plan-page .plan-why .plan-section-heading h2{font-size:29px;line-height:1.1;letter-spacing:-1.2px}
+.plan-page .plan-feature-grid{grid-template-columns:repeat(2,1fr);gap:14px;max-width:865px;margin:auto}
+.plan-page .plan-feature-card{min-height:126px;padding:19px;border:1px solid #eee5d7;border-radius:17px;box-shadow:0 10px 24px rgba(85,69,46,.05)}
+.plan-page .plan-feature-card .num{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--reference-orange);color:#fff;margin-bottom:13px;font-size:10px}
+.plan-page .plan-feature-card h3{font-size:16px;color:var(--reference-forest);margin-bottom:3px}
+.plan-page .plan-feature-card p{font-size:12px;color:#748079}
+.plan-secondary-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:865px;margin:51px auto 0}
+.plan-secondary-grid article{min-height:105px;padding:20px;border:1px solid #eee5d7;border-radius:17px;background:#fffdf8}
+.plan-secondary-grid h3{font-size:15px;margin:0 0 5px;color:var(--reference-forest)}
+.plan-secondary-grid p{font-size:12px;line-height:1.45;color:#748079;margin:0}
+.plan-secondary-grid .plan-price-card{background:var(--reference-forest);color:#fff}
+.plan-secondary-grid .plan-price-card strong{display:block;font:800 27px/1 "Manrope"}
+.plan-secondary-grid .plan-price-card p{color:#d5e0da;margin:9px 0 12px}
+.plan-secondary-grid .plan-price-card .button{width:100%;justify-content:center;padding:11px}
+.plan-page .plan-how{padding:49px 0 53px;background:var(--reference-forest);color:#fff}
+.plan-page .plan-how .plan-section-heading{margin-bottom:28px}
+.plan-page .plan-how h2{color:#fff;font-size:30px;margin:0}
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:58px;max-width:865px;margin:auto}
+.how-grid article>div{color:var(--reference-orange);font-size:11px;font-weight:800;margin-bottom:7px}
+.how-grid h3{font:800 19px/1.1 "Manrope";margin:0 0 7px;color:#fff}
+.how-grid p{font-size:12px;line-height:1.5;color:#b7c9c0;margin:0}
+.plan-page .plan-legacy-preview,.plan-page .plan-legacy-split,.plan-page .plan-faq{display:none}
+.plan-page .plan-buy{padding:51px 0;background:var(--reference-cream)}
+.plan-page .plan-buy-box{display:flex;flex-direction:column;text-align:center;align-items:center;max-width:795px;margin:auto;padding:39px 70px;background:var(--reference-forest);border:0;border-radius:24px;box-shadow:none;color:#fff}
+.plan-page .plan-buy-box h2{font-size:29px;letter-spacing:-1.2px;color:#fff;margin:11px 0 8px}
+.plan-page .plan-buy-box p{max-width:500px;color:#c2d1c9;font-size:14px;margin:0 0 22px}
+.plan-page .plan-buy-box .button{padding:13px 20px}
+.plan-page .site-footer{background:var(--reference-forest);border:0;color:#fff;padding-top:35px}
+.plan-page .site-footer .brand{color:#fff}
+.plan-page .footer-links{color:#c5d4cd}
+.plan-page .copyright{border-color:rgba(255,255,255,.1);color:#8fa9a0}
+@media(max-width:900px){.plan-page .site-header{height:76px}.plan-nav{margin-right:55px;gap:13px}.plan-page .hero{height:auto;padding-bottom:48px}.plan-page .hero-grid{grid-template-columns:1fr;gap:30px}.plan-page .plan-product{order:2}.plan-page .plan-product-card{width:300px}.plan-page .plan-product-card img{height:300px}.plan-secondary-grid{grid-template-columns:repeat(2,1fr)} }
+@media(max-width:560px){.plan-page .site-header{height:70px}.plan-page .nav-inner{width:calc(100% - 30px)}.plan-nav{display:none}.plan-header-button{top:16px}.plan-page .hero{padding-top:42px}.plan-page .plan-hero-copy h1{font-size:42px;letter-spacing:-2px}.plan-page .plan-preview,.plan-page .plan-why{padding:57px 0}.plan-page .plan-stats{gap:5px}.plan-page .plan-stats span{padding:7px 9px;font-size:7px}.plan-page .plan-stats b{font-size:10px}.plan-page .plan-preview-grid,.plan-page .plan-feature-grid,.plan-secondary-grid,.how-grid{grid-template-columns:1fr;gap:24px}.plan-page .plan-preview-grid{max-width:260px}.plan-page .plan-preview-frame{height:290px}.plan-secondary-grid{margin-top:34px}.plan-page .plan-buy-box{padding:34px 20px}.plan-page .plan-buy-box h2{font-size:25px}.plan-page .site-footer .footer-inner{gap:17px}}
 @media(max-width:900px){
  .plan-page .plan-benefit-grid,.plan-page .plan-feature-grid{grid-template-columns:1fr 1fr}
  .plan-page .plan-preview-grid{grid-template-columns:1fr 1fr}
@@ -90,13 +162,50 @@
  .plan-page .plan-split-copy h2,.plan-page .plan-buy-box h2{font-size:33px}
  .plan-page .plan-buy-box{padding:26px 20px}
 }
+/* Live reference geometry */
+.plan-page .container{width:calc(100% - 40px);max-width:1160px}
+.plan-page .site-header{height:69px}
+.plan-page .nav-inner{max-width:1160px}
+.plan-page .logo-mark{width:36px;height:36px}
+.plan-page .hero{height:484.75px;padding:56px 0 0}
+.plan-page .hero-grid{grid-template-columns:minmax(0,517px) 420px;gap:56px;max-width:1160px;justify-content:space-between;align-items:start}
+.plan-page .plan-product{margin-top:4px}
+.plan-page .plan-hero-copy h1{font-size:60px;line-height:1.05;letter-spacing:-3.3px;margin:12px 0 14px}
+.plan-page .plan-lede{font-size:18px;line-height:1.625;max-width:517px;margin-bottom:17px}
+.plan-page .plan-product-card{width:420px}
+.plan-page .plan-product-card img{height:420px}
+.plan-page .plan-preview{padding:99px 0 85.4px}
+.plan-page .plan-stats{margin-bottom:67px}
+.plan-page .plan-preview .section-heading{max-width:none}
+.plan-page .plan-preview .plan-section-heading{margin-bottom:39px}
+.plan-page .plan-preview .plan-section-heading h2{font-size:40px;line-height:1;max-width:none}
+.plan-page .plan-preview-grid{grid-template-columns:repeat(3,280px);gap:69px;max-width:none;justify-content:center}
+.plan-page .plan-preview-frame{height:396px}
+.plan-page .plan-centered-button{margin-top:56px}
+.plan-page .plan-why{padding:86px 0 50px}
+.plan-page .plan-why .plan-section-heading{margin-bottom:62px}
+.plan-page .plan-why .plan-section-heading h2{font-size:40px;line-height:1;max-width:none}
+.plan-page .plan-feature-grid{grid-template-columns:repeat(2,1fr);gap:14px;max-width:none}
+.plan-page .plan-feature-card{min-height:126px;padding:19px 25px}
+.plan-page .plan-supporting{padding:25px 0 88px;background:var(--reference-cream)}
+.plan-page .plan-secondary-grid{grid-template-columns:repeat(3,1fr);gap:14px 69px;max-width:none;margin:0}
+.plan-page .plan-secondary-grid article{min-height:126px}
+.plan-page .plan-how{height:324px;padding:64px 0 0}
+.plan-page .plan-how .plan-section-heading{margin-bottom:67px}
+.plan-page .plan-how h2{font-size:40px}
+.plan-page .how-grid{grid-template-columns:repeat(3,1fr);gap:32px;max-width:none}
+.plan-page .plan-buy{height:472px;padding:140px 0 0}
+.plan-page .plan-buy-box{max-width:795px;padding:39px 70px}
+@media(max-width:900px){.plan-page .hero{height:auto;padding-bottom:48px}.plan-page .hero-grid{grid-template-columns:1fr;gap:30px}.plan-page .plan-product{order:2}.plan-page .plan-product-card{width:420px}.plan-page .plan-preview-grid{grid-template-columns:repeat(2,280px)}.plan-page .plan-secondary-grid{grid-template-columns:repeat(2,1fr)}.plan-page .plan-how,.plan-page .plan-buy{height:auto}.plan-page .plan-buy{padding:80px 0}.plan-page .plan-how{padding:64px 0}.plan-page .how-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.plan-page .container{width:calc(100% - 30px)}.plan-page .site-header{height:70px}.plan-page .hero{height:auto;padding:42px 0 58px}.plan-page .plan-hero-copy h1{font-size:42px;letter-spacing:-2px}.plan-page .plan-lede{font-size:14px}.plan-page .plan-product-card{width:300px}.plan-page .plan-product-card img{height:300px}.plan-page .plan-preview,.plan-page .plan-why{padding:57px 0}.plan-page .plan-stats{margin-bottom:42px}.plan-page .plan-preview .plan-section-heading h2,.plan-page .plan-why .plan-section-heading h2{font-size:29px}.plan-page .plan-preview-grid,.plan-page .plan-feature-grid,.plan-page .plan-secondary-grid,.plan-page .how-grid{grid-template-columns:1fr;gap:24px}.plan-page .plan-preview-grid{max-width:260px}.plan-page .plan-preview-frame{height:290px}.plan-page .plan-centered-button{margin-top:29px}.plan-page .plan-supporting{padding:25px 0 40px}.plan-page .plan-how{height:auto}.plan-page .plan-buy{height:auto;padding:51px 0}.plan-page .plan-buy-box{padding:34px 20px}}
 </style>
 </head>
 <body class="plan-page">
 <header class="site-header">
   <div class="container nav-inner">
-    <a class="brand" href="../index.html" aria-label="Wellness Eras home"><img src="../assets/logo-mark.svg" alt="" class="logo-mark"><span>Wellness <b>Eras</b></span></a>
-    <div class="nav-spacer" aria-hidden="true"></div>
+    <a class="brand" href="../index.html" aria-label="Wellness Eras home"><img src="logo.png" alt="" class="logo-mark"><span>Wellness <b>Eras</b></span></a>
+    <nav class="plan-nav" aria-label="Main navigation"><a href="#inside">Inside</a><a href="#why">Why this plan</a><a href="#how">How it works</a><a href="#buy">Cart</a></nav>
+    <a class="button plan-header-button" href="#buy">Get the plan <span>→</span></a>
   </div>
 </header>
 
@@ -105,48 +214,36 @@
  <div class="hero-glow"></div>
  <div class="container hero-grid">
   <div class="plan-hero-copy">
-   <div class="eyebrow"><span></span> 28 DAY CLEAN EATING MEAL PLAN</div>
-   <h1>Simple meals.<br><span>Real food.</span></h1>
-   <p class="plan-lede">Take the guesswork out of clean eating with four weeks of simple recipes, weekly meal plans and grocery lists you can actually use.</p>
-   <div class="plan-checks">
-    <div class="plan-check"><i>✓</i>28 days of planned meals</div>
-    <div class="plan-check"><i>✓</i>Easy, everyday recipes</div>
-    <div class="plan-check"><i>✓</i>Breakfast, lunch, dinner and snacks</div>
-    <div class="plan-check"><i>✓</i>4 weekly grocery lists</div>
-    <div class="plan-check"><i>✓</i>Instant digital download</div>
-   </div>
-   <a class="button" href="#buy">Get the 28 day plan <span>→</span></a>
-   <div class="plan-micro"><span>✓ One time payment</span><span>✓ Digital download</span><span>✓ Start today</span></div>
+  <div class="eyebrow"><span></span> 28 DAYS · DIGITAL MEAL PLAN</div>
+  <h1>Eat <span>clean</span> for 28 days<br>like never before</h1>
+  <p class="plan-lede">Transform your health, starting with your next meal. A 45 page system that removes the guesswork, so you stop dieting and start eating food that actually fits your life.</p>
+  <a class="button" href="#buy">Get the plan for $4.99 <span>→</span></a>
+  <div class="plan-micro"><span>One time.</span><span>Instant access.</span><span>Less than a latte.</span></div>
   </div>
   <div class="plan-product">
-   <div class="plan-product-card"><img src="cover.png" alt="28 Day Clean Eating Meal Plan"></div>
-   <div class="plan-price"><div><strong>$17</strong><small>ONE TIME</small></div></div>
+  <div class="plan-product-card"><img src="hero-cover.png" alt="28 Day Clean Eating Meal Plan"></div>
   </div>
  </div>
 </section>
 
-<section class="benefits plan-benefits">
- <div class="container benefit-grid plan-benefit-grid">
-  <article><div class="benefit-icon">🥗</div><h3>Whole foods</h3><p>Real ingredients</p></article>
-  <article><div class="benefit-icon">🍳</div><h3>Easy recipes</h3><p>Simple to make</p></article>
-  <article><div class="benefit-icon">📅</div><h3>4 weeks</h3><p>Fully planned</p></article>
-  <article><div class="benefit-icon">🛒</div><h3>Grocery lists</h3><p>Done for you</p></article>
- </div>
-</section>
+<section id="inside" class="plan-preview plan-section"><div class="container"><div class="plan-stats"><span><b>28 days</b>FULLY PLANNED</span><span><b>45 pages</b>RECIPES + LISTS</span><span><b>Instant</b>DIGITAL DOWNLOAD</span></div><div class="section-heading plan-section-heading"><div class="eyebrow">Inside the plan</div><h2>Everything you need for 28 days. Nothing you don’t.</h2></div><div class="plan-preview-grid"><article class="plan-preview-card"><div class="plan-preview-frame"><img src="recipe-macros.png" alt="Recipe with macros preview"></div><h3>Recipes with macros</h3><p>Easy plates. Real food. No guesswork.</p></article><article class="plan-preview-card"><div class="plan-preview-frame"><img src="meal-calendar.png" alt="Four week calendar preview"></div><h3>4 week calendar</h3><p>Breakfast, lunch, dinner, and snacks, mapped.</p></article><article class="plan-preview-card"><div class="plan-preview-frame"><img src="grocery-list-new.png" alt="Grocery list preview"></div><h3>Grocery lists</h3><p>Shop once. Cook all week.</p></article></div><a class="button plan-centered-button" href="#why">Explore the full plan <span>→</span></a></div></section>
 
-<section id="inside" class="plan-section">
+<section id="why" class="plan-section plan-why">
  <div class="container">
-  <div class="section-heading plan-section-heading"><div class="eyebrow">What you'll get</div><h2>Everything you need to make the next four weeks easier.</h2><p>One practical guide for planning meals, cooking simple food and knowing what to buy.</p></div>
+  <div class="section-heading plan-section-heading"><div class="eyebrow">Why this plan</div><h2>Most people don’t fail at clean eating.<br>They fail at planning.</h2></div>
   <div class="plan-feature-grid">
-   <article class="plan-feature-card"><div class="num">01</div><h3>Clean Eating Guide</h3><p>Simple guidance on whole foods, pantry staples and practical clean eating.</p></article>
-   <article class="plan-feature-card"><div class="num">02</div><h3>Easy Recipes</h3><p>Breakfasts, lunches, dinners, snacks and healthier treats made with familiar ingredients.</p></article>
-   <article class="plan-feature-card"><div class="num">03</div><h3>4 Week Meal Plan</h3><p>Breakfast, lunch, dinner and snack ideas organized for four full weeks.</p></article>
-   <article class="plan-feature-card"><div class="num">04</div><h3>4 Grocery Lists</h3><p>A shopping list for each week, so you know what to buy before you start.</p></article>
+  <article class="plan-feature-card"><div class="num">01</div><h3>Whole food recipes</h3><p>Real plates with macros. No calorie counting, no gimmicks.</p></article>
+  <article class="plan-feature-card"><div class="num">02</div><h3>Done for you calendar</h3><p>Breakfast, lunch, dinner, and snacks mapped for 28 days.</p></article>
+  <article class="plan-feature-card"><div class="num">03</div><h3>Grocery lists</h3><p>Shop once. Cook all week. Stop wasting money in the aisles.</p></article>
+  <article class="plan-feature-card"><div class="num">04</div><h3>Prep that sticks</h3><p>Weekly organization so clean eating runs on autopilot.</p></article>
   </div>
  </div>
 </section>
 
-<section class="plan-section plan-preview">
+<section class="plan-supporting"><div class="container"><div class="plan-secondary-grid"><article><h3>A full 4 week calendar</h3><p>28 days of breakfast, lunch, dinner, and snacks, already planned.</p></article><article><h3>Whole food recipes</h3><p>Easy meals that don’t need a chef’s degree or hours in the kitchen.</p></article><article><h3>Smart grocery lists</h3><p>Optimized lists so you spend less time and money at the store.</p></article><article><h3>Prep like a pro</h3><p>Weekly organization so healthy eating becomes autopilot.</p></article><article><h3>Clean eating essentials</h3><p>A quick start guide to the foods to embrace, and the ones to skip.</p></article><article class="plan-price-card"><strong>$4.99</strong><p>No calorie counting. No restrictive fasting. Just real food that works.</p><a class="button" href="#buy">Start the 28 days →</a></article></div></div></section>
+
+<section id="how" class="plan-how"><div class="container"><div class="section-heading plan-section-heading"><h2>How it works</h2></div><div class="how-grid"><article><div>01</div><h3>Get the plan</h3><p>Instant digital download. Open it the same day you buy.</p></article><article><div>02</div><h3>Follow the calendar</h3><p>Each day is already decided. No staring at the fridge.</p></article><article><div>03</div><h3>Eat on autopilot</h3><p>Recipes, lists, and prep tips keep the next 28 days simple.</p></article></div></div></section>
+<section class="plan-section plan-preview plan-legacy-preview">
  <div class="container">
   <div class="section-heading plan-section-heading"><div class="eyebrow">A peek inside</div><h2>See what you're getting before you buy.</h2><p>These are examples of the pages included in your digital meal plan.</p></div>
   <div class="plan-preview-grid">
@@ -158,7 +255,7 @@
  </div>
 </section>
 
-<section class="plan-split">
+<section class="plan-split plan-legacy-split">
  <div class="container plan-split-grid">
   <div class="plan-split-image"><img src="food-bowl.png" alt="Healthy clean eating meal"></div>
   <div class="plan-split-copy"><div class="eyebrow">Why this plan</div><h2>Less planning.<br>More eating well.</h2><p>You don't need complicated rules or a new recipe every day. This plan gives you a clear starting point and practical structure for the month.</p><div class="plan-feature-list"><div class="plan-check"><i>✓</i>Four weeks of organized meal ideas.</div><div class="plan-check"><i>✓</i>Recipes built around familiar whole foods.</div><div class="plan-check"><i>✓</i>Weekly grocery lists to simplify shopping.</div><div class="plan-check"><i>✓</i>A plan to follow when you don't want to decide what to cook.</div></div><a class="button" href="https://spicycircuits.lemonsqueezy.com/checkout/buy/537974b6-528c-43c0-b173-15b665d16186">Get the full plan <span>→</span></a></div>
@@ -166,7 +263,7 @@
 </section>
 
 <section class="plan-buy" id="buy">
- <div class="container"><div class="plan-buy-box"><div><div class="eyebrow">Ready for the next 28 days?</div><h2>Make your next meal easier.</h2><p>Get the complete 28 Day Clean Eating Meal Plan and start with Week 1 today.</p><div class="plan-checks"><div class="plan-check"><i>✓</i>Recipes and weekly meal plans</div><div class="plan-check"><i>✓</i>Four grocery lists</div><div class="plan-check"><i>✓</i>Instant digital access</div></div></div><div class="plan-buy-side"><strong>$17</strong><span>One time payment</span><a class="button" href="https://spicycircuits.lemonsqueezy.com/checkout/buy/537974b6-528c-43c0-b173-15b665d16186">Get the 28 day plan <span>→</span></a></div></div></div>
+ <div class="container"><div class="plan-buy-box"><div class="eyebrow">The offer</div><h2>Your next 28 days, already decided.</h2><p>Get the complete 4 week system today for $4.99, one time. Shed a few pounds, clear your skin, or simply wake up feeling refreshed. This is the foundation.</p><a class="button" href="https://spicycircuits.lemonsqueezy.com/checkout/buy/537974b6-528c-43c0-b173-15b665d16186">Get instant access for $4.99 →</a></div></div>
 </section>
 
 <section class="plan-section plan-faq" id="faq">
@@ -175,7 +272,7 @@
 </main>
 
 <footer class="site-footer">
- <div class="container footer-inner"><a class="brand" href="../index.html"><img src="../assets/logo-mark.svg" alt="" class="logo-mark"><span>Wellness <b>Eras</b></span></a><div class="footer-links"><a href="../index.html">Home</a><a href="../downloads/">Free 7 Day Plan</a><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a></div></div>
+ <div class="container footer-inner"><a class="brand" href="../index.html"><img src="logo.png" alt="" class="logo-mark"><span>Wellness <b>Eras</b></span></a><div class="footer-links"><a href="../index.html">Home</a><a href="../downloads/">Free 7 Day Plan</a><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a></div></div>
  <div class="container copyright">© 2026 Wellness Eras. Clean eating made simpler.</div>
 </footer>
 </body>
